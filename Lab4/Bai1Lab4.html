@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <Style>
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .inputfile+label {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: white;
+            background-color: black;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        h5:after {
+            content: "";
+            width: 160px;
+            height: 2px;
+            display: block;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+            right: 80px;
+        }
+
+        .inputfile:focus+label,
+        .inputfile+label:hover {
+            background-color: red;
+        }
+    </Style>
+
+    <script src="https://kit.fontawesome.com/fbdb677fe0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div style="margin-left: 400px;
+    background-clip: padding-box;
+    
+    height: 350px;
+    padding: 20px;
+    width: 500px;
+    border: 5px solid black  ; box-shadow: 3px 3px 20px 5px rgb(92, 80, 80);">
+        <div style="display: flex;">
+            <hr style="width:5px;background-color: red;position: relative;right: 110px">
+            <span style="position: relative; display: flex; align-items: center;">
+                <h1 style="font-size: 15px;text-align: right;;position: relative;right: 200px">
+                    Thông tin tài khoản(bắt buộc)</h1>
+                <h5 style="font-family: Arial, Helvetica, sans-serif;color: #81878B;
+                            font-weight: 200; display: flex; align-items: center;"></h5> Rút gọn
+                <i class="fa-solid fa-angle-up"></i>
+                <p style="margin-left: 30%; position: absolute;"></p>
+
+            </span>
+        </div>
+        <p style="background-color: rgb(230, 225, 225); width: 100px; height: 120px;">Chưa cập nhật Hình Ảnh</p>
+        <input type="file" name="file" id="file" class="inputfile" />
+        <label for="file">Choose a file</label>
+        <div style="margin-left: -10px;
+        background-clip: padding-box;
+        margin-top: -187px;
+        
+        height: 500px;
+        padding: 20px;
+        width: 500px;">
+
+            <center>
+                <label style="margin-left: 44px;">Họ tên <font style="color: red;">* </font></label><input type="text"
+                    placeholder="Lương Khánh Tý">
+                <br><br>
+                <label>Số điện thoại <font style="color: red;">* </font></label><input type="text"
+                    placeholder="0974883609">
+                <br><br>
+                <form>
+                    <label style="margin-left: -8px;">Ngày sinh <font style="color: red;">*</font></label>
+                    <input type="number" name="quantity" min="1" max="31" style="height: 15; width: 30px;">
+                    <input type="number" name="quantity1" min="1" max="12" style="height: 15px; width: 30px;">
+                    <input type="number" name="quantity2" style="height: 15px; width: 60px;">
+
+                </form> <br>
+                <form action="">
+                    <label style="margin-left: -53px;">Giới tính <font style="color: red;">*</font></label>
+                    <select style="width: 100px;">
+                        <option> Nam</option>
+                        <option> Nữ</option>
+                    </select><br><br>
+                    <label style="margin-left: 20px;">Hôn nhân <font style="color: red;">*</font></label>
+                    <select style="width: 180px;" name="lang" id="lang-select">
+                        <option value="">Chọn tình trạng hôn nhân</option>
+                        <option value="csharp">Đã kết hôn</option>
+                        <option value="cpp">Độc thân</option>
+                        <option value="php">Ly hôn</option>
+                    </select><br><br>
+                    </select>
+                    <label style="margin-left: -63px;">Tỉnh/Thành phố <font style="color: red;">*</font></label>
+                    <select style="width: 140px;" name="lang" id="lang-select">
+                        <option> Đà Nẵng</option>
+                        <option> Quảng Ngãi</option>
+                        <option>Quảng Nam</option>
+                        <option>Hà Tĩnh</option>
+                        <option>Phú Yên</option>
+                        <option>Huế</option>
+                        <option>Khánh Hoà</option>
+                    </select><br><br>
+                    </select>
+                    <label style="margin-left: -50px;">Chỗ ở hiện tại <font style="color: red;">*</font></label>
+                    <select style="width: 140px;" name="lang" id="lang-select">
+                        <option> Đà Nẵng</option>
+                        <option> Quảng Ngãi</option>
+                        <option>Quảng Nam</option>
+                        <option>Hà Tĩnh</option>
+                        <option>Phú Yên</option>
+                        <option>Huế</option>
+                        <option>Khánh Hoà</option>
+                    </select><br><br>
+
+
+                    <label for=""> <button
+                            style="background-color: rgb(250, 176, 16); width: 80px; height: 30px; color: white; border: none;">
+                            <i class="fa-solid fa-floppy-disk"></i>Lưu</button></label>
+                </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
